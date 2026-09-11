@@ -1,10 +1,19 @@
 body {
   margin: 0;
-  background-image: url(Assets/Minecraft-Logo.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("Assets/Minecraft-Logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.6;
+  z-index: -1;
 }
 
 nav {
@@ -61,8 +70,8 @@ h2 {
   font-size: 16px;
 }
 
-#blocks {
-  color: yellow;
+.haven {
+  color: goldenrod;
 }
 
 .cta-Button {
@@ -81,4 +90,21 @@ h2 {
 
 .cta-Button:hover {
   scale: 1.1;
+}
+
+/*/////////////////////HERO BEREICH//////////////////////*/
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  color: white;
+  margin-top: 50px;
+}
+
+.mainHaven {
+  font-size: 80px;
+  font-family: "Courier New", Courier, monospace;
 }
